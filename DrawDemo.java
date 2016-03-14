@@ -87,13 +87,13 @@ public class DrawDemo
      */
     public void drawPentagon()
     {
-        Pen pen = new Pen(125, 125, myCanvas);
+        Pen pen = new Pen(200, 200, myCanvas);
         pen.setColor(Color.RED);
         
          for (int i=0; i<5; i++) {
             
             pen.move(100);
-            pen.turn(72);
+            pen.turn(-72);
             
         }
        
