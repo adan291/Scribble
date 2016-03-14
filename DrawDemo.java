@@ -98,13 +98,30 @@ public class DrawDemo
         }
 
     }
+    
+    /**
+     * Draw a Spiral made of many squares.
+     */
+    public void drawSpiral()
+    {
+        Pen pen = new Pen(200, 200, myCanvas);
+        pen.setColor(Color.BLUE);
+
+        for (int i=0; i<52; i++) {
+
+            pen.move(i * 5 );
+            pen.turn(90);
+
+        }
+
+    }
 
     /**
      * Draw a Polygon made of many squares.
      */
     public void drawPolygon(int n)
     {
-        if(n>3){
+        if(n>2){
             Pen pen = new Pen(200, 200, myCanvas);
 
             polygon(pen, n);
