@@ -81,7 +81,26 @@ public class DrawDemo
         triangle(pen);
        
     }
-
+    
+      /**
+     * Draw a Triangle made of many squares.
+     */
+    public void drawPentagon()
+    {
+        Pen pen = new Pen(125, 125, myCanvas);
+        pen.setColor(Color.RED);
+        
+         for (int i=0; i<5; i++) {
+            
+            pen.move(100);
+            pen.turn(72);
+            
+        }
+       
+    }
+    
+    
+    
 
     /**
      * Draw some random squiggles on the screen, in random colors.
